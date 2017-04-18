@@ -1,0 +1,13 @@
+@mixin transitionTransform($speed, $easing, $delay:0) {
+  @if $delay > 0 {
+    -webkit-transition: -webkit-transform $speed $easing $delay;
+    -moz-transition: -moz-transform $speed $easing $delay;
+    -o-transition: -o-transform $speed $easing $delay;
+    transition: transform $speed $easing $delay;
+  } @else {
+    -webkit-transition: -webkit-transform $speed $easing;
+    -moz-transition: -moz-transform $speed $easing;
+    -o-transition: -o-transform $speed $easing;
+    transition: transform $speed $easing;
+  }
+}

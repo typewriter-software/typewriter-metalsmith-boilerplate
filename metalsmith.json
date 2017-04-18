@@ -1,0 +1,26 @@
+{
+  "source": "./src/contents",
+  "destination": "./build",
+  "metadata": {
+    "title": "Concrete Metalsmith Boilerplate",
+    "description": "Metalsmith boilerplate for Concrete's Static Sites"
+  },
+  "plugins": {
+    "metalsmith-typewriter": {
+      "username": "mcrider",
+      "project": "for-science"
+    },
+    "metalsmith-markdown": {},
+    "metalsmith-collections": {
+      "products": {}
+    },
+    "metalsmith-jade": {},
+    "metalsmith-permalinks": {
+      "pattern": ":title"
+    },
+    "metalsmith-templates": {
+      "engine": "jade",
+      "directory": "./src/templates"
+    }
+  }
+}

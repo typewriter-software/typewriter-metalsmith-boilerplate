@@ -1,0 +1,14 @@
+.DS_Store
+node_modules
+npm-debug.log
+build
+.awspublish-*
+aws-staging.json
+
+.DS_Store
+*/.DS_Store
+*/*/.DS_Store
+*/*/*/.DS_Store
+*/*/*/*/.DS_Store
+*/*/*/*/*/.DS_Store
+*/*/*/*/*/*/.DS_Store

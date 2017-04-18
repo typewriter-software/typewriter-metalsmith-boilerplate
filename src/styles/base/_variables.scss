@@ -1,0 +1,72 @@
+// Typography
+$serif: Chronicle, Georgia, serif;
+$sans-serif: Graphik, Helvetica, serif;
+$base-font-family: $serif;
+$header-font-family: $sans-serif;
+
+// Font Sizes
+$base-font-size: 16px;
+$p-font-size: $base-font-size;
+
+// Other Sizes
+$base-border-radius: 5px;
+$base-z-index: 0;
+$footer-height: 200px;
+$body-padding: 15px;
+$nav-height: 50px;
+$mobile-margin: 20px;
+$hero-height: 100vh;
+$mobile-hero-can-height: 40vh;
+$buy-button-width-state: 210px;
+$buy-button-width-variants: 176px;
+
+
+// Colors
+$white: #fff;
+$black: #000;
+$gray-1: #777A80;
+$gray-2: #767679;
+$gray-3: #2E2926;
+$gray-4: #F2F2F2;
+$gray-5: #A7ABBA;
+$blue-1: #292F74;
+$blue-2: #2E3192;
+$blue-3: #192C72;
+$error-red: #FB3E3E;
+
+// Background Colors
+$base-background-color: $white;
+$footer-blue: $blue-3;
+$text-blue: $blue-2;
+$link-color: $gray-5;
+
+// Type colors
+$base-type-color: $white;
+$type-header-bg-color: #FFF;
+$active-comment-color: $gray-1;
+$action-color: #F68773;
+$properties-bg-color: #FAFCFB;
+$text-input-color: #EEF7F6;
+$text-input-border-color: #CFE3E2;
+$dark-text-color: $gray-1;
+
+// Font Colors
+$base-font-color: $base-type-color;
+$base-accent-color: $gray-2;
+
+// Link Colors
+$base-link-color: $white;
+$base-link-underline-color: #F68773;
+$hover-link-color: darken($base-accent-color, 15);
+$base-button-color: #575E79;
+$hover-button-color: $hover-link-color;
+$border-button-color: 1px solid $base-button-color;
+
+
+// Border color
+$base-border-color: $white;
+$base-border: 2px solid $base-border-color;
+
+// Transitions
+$mobile-menu-speed: .4s;
+$show-slide-transition: cubic-bezier(0.320, 0.685, 0.460, 1.010);

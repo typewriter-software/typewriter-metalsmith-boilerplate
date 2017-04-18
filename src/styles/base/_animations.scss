@@ -1,0 +1,23 @@
+@include keyframes(bounce) {
+  0% {
+    transform: translate(-50%, -42%);
+  }
+  50% {
+    transform: translate(-50%, -57%);
+  }
+  100% {
+    transform: translate(-50%, -42%);
+  }
+}
+
+@include keyframes(bounceSub) {
+  0% {
+    transform: translate(0, -42%);
+  }
+  50% {
+    transform: translate(0, -57%);
+  }
+  100% {
+    transform: translate(0, -42%);
+  }
+}

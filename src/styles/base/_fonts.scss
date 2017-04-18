@@ -1,0 +1,4 @@
+@include font-face("Graphik", "/fonts/Graphik-Regular", $file-formats: eot svg ttf woff);
+@include font-face("Graphik", "/fonts/Graphik-Semibold", bold, $file-formats: eot svg ttf woff);
+
+@include font-face("Chronicle", "/fonts/ChronicleDisp-Roman", $file-formats: eot svg ttf woff);

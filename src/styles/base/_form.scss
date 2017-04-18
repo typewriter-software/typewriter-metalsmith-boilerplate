@@ -1,0 +1,27 @@
+input[type="email"], input[type="text"], textarea {
+  display: block;
+  margin: 18px auto 44px auto;
+  width: 100%;
+  max-width: 560px;
+  font-size: 15px;
+  line-height: 38px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid $white;
+  text-align: center;
+  border-radius: 0;
+
+  @include placeholder {
+    color: $white;
+    font: 15px $sans-serif;
+    line-height: 38px;
+    letter-spacing: .5px;
+  }
+
+  &:focus {
+    @include placeholder {
+      color: transparent;
+    }
+  }
+}

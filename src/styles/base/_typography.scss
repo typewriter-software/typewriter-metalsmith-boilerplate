@@ -1,0 +1,150 @@
+body {
+  -webkit-font-smoothing: antialiased;
+  color: $base-font-color;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: $base-font-size;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-weight: normal;
+  margin: 0;
+}
+
+h1 {
+  font-size: 40px;
+
+  @include media($tabletMax) {
+    font-size: 48px;
+    line-height: 48px;
+  }
+}
+
+h2 {
+  font-family: $serif;
+  font-size: 48px;
+  line-height: 48px;
+  margin-bottom: 18px;
+  color: $text-blue;
+
+  @include media($tabletMax) {
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  &.bottom-line {
+    padding-bottom: 18px;
+    border-bottom: 1px solid $text-blue;
+
+    @include media($mobile) {
+      border-bottom: 0;
+      padding-bottom: 0;
+    }
+  }
+
+  &.gray {
+    color: $gray-5;
+  }
+}
+
+h3 {
+  font-family: $serif;
+  font-size: 36px;
+  line-height: 36px;
+  color: $text-blue;
+}
+
+h4 {
+  font-family: $sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 22px;
+  color: $text-blue;
+}
+
+h5 {
+  font-size: 19px;
+  line-height: 16px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  &.strong {
+    font-weight: 600;
+  }
+}
+
+p, li {
+  font-family: $sans-serif;
+  font-size: 15px;
+  line-height: 19px;
+
+  &.deck {
+    font-size: 19px;
+    line-height: 25px;
+
+    @include media($mobile) {
+      font-size: 12px;
+      line-height: 14px;
+      max-width: 166px;
+    }
+  }
+
+  @include media($mobile) {
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+
+strong {
+  font-size: $p-font-size;
+  line-height: $p-font-size;
+  font-weight: bold;
+}
+
+.small-caps {
+  font-variant: small-caps;
+  font-size: 120%;
+}
+
+a {
+  transition: color 0.1s linear;
+  color: $base-link-color;
+  text-decoration: none;
+
+  &:active, &:focus {
+    outline: none;
+  }
+}
+
+a.button, input[type="submit"] {
+  display: inline-block;
+  font: 16px $sans-serif;
+  padding: 13px 60px;
+  border: 1px solid $text-blue;
+  text-transform: uppercase;
+  line-height: 16px;
+  background-color: transparent;
+  cursor: pointer;
+  color: $text-blue;
+  transition: all .15s ease-out;
+
+  &:hover {
+    color: $white;
+    background-color: $text-blue;
+  }
+
+  @include media($mobile) {
+    font-size: 12px;
+    padding: 7px 48px;
+  }
+
+  @media (-webkit-min-device-pixel-ratio: 2) {
+    border-width: .5px;
+  }
+}

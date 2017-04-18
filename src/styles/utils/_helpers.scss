@@ -1,0 +1,71 @@
+// Various helper classes
+%clearfix {
+  @include clearfix;
+}
+
+.pull-right {
+  float:right;
+}
+
+.pull-left {
+  float: left;
+}
+
+.center {
+  text-align: center;
+}
+
+.center-vertical {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hidden {
+  display: none !important;
+}
+
+.clearfix {
+  @include clearfix;
+}
+
+.contents {
+  @include outer-container;
+}
+
+.left, .right {
+  @include span-columns(6);
+
+  &.small-block {
+    @include span-columns(5);
+
+    @include media($mobile) {
+      p {
+        font-size: 16px;
+        line-height: 20px;
+      }
+    }
+  }
+
+  &.smaller-block {
+    @include span-columns(4);
+
+    @include media($mobile) {
+      max-width: 166px;
+    }
+  }
+
+  &.small-block, &.smaller-block {
+    @include media($tabletMax) {
+      @include span-columns(8);
+    }
+
+    @include media($mobile) {
+      @include span-columns(10);
+    }
+  }
+}
+
+.no-break {
+  white-space: nowrap;
+}

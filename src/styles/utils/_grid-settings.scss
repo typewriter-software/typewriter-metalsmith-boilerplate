@@ -1,0 +1,48 @@
+@import "neat-helpers"; // or "../neat/neat-helpers" when not in Rails
+
+// Neat Overrides
+// $column: 90px;
+// $gutter: 1px;
+$fg-column: $column;
+$fg-gutter: $gutter;
+// $grid-columns: 12;
+$max-width: 960px;
+
+@mixin omega-reset($nth) {
+  &:nth-child(#{$nth}) { margin-right: flex-gutter(); }
+  &:nth-child(#{$nth}+1) { clear: none }
+}
+
+//
+// Breakpoints
+//
+$mobile-tiny-max: 320px;
+$mobile-very-sm-max: 380px;
+$mobile-sm-max: 480px;
+$mobile-max: 640px;
+$tablet-max: 768px;
+$mobile-menu-max: 804px;
+$grid-max: $max-width;
+$grid-padding: $max-width + 40px;
+$desktop-max: $max-width;
+$desktop-beyond-max: $max-width + 400;
+
+$mobileTiny: new-breakpoint(max-width $mobile-tiny-max);
+$mobileVerySmall: new-breakpoint(max-width $mobile-very-sm-max);
+$mobileSm: new-breakpoint(max-width $mobile-sm-max);
+$mobile: new-breakpoint(max-width $mobile-max);
+$mobileMin: new-breakpoint(min-width $mobile-max);
+$tablet: new-breakpoint(min-width $mobile-max max-width $tablet-max);
+$mobileLandscape:  new-breakpoint(min-width $mobile-max max-width $tablet-max orientation landscape);
+$mobileMenuMin: new-breakpoint(min-width $mobile-menu-max + 1);
+$mobileMenuMax: new-breakpoint(max-width $mobile-menu-max);
+$tabletMax: new-breakpoint(max-width $tablet-max);
+$tabletMin: new-breakpoint(min-width $tablet-max);
+$gridMax: new-breakpoint(max-width $grid-max);
+$desktop: new-breakpoint(min-width $tablet-max max-width $desktop-max);
+$desktopMax: new-breakpoint(max-width $desktop-max);
+$desktopBeyondMax: new-breakpoint(min-width $desktop-beyond-max);
+$desktop-lg: new-breakpoint(min-width $desktop-max);
+$contactFormShortScreen: new-breakpoint(max-height 1100px min-width $mobile-max);
+$menuShortScreenMin: new-breakpoint(min-width $tablet-max min-height 800px);
+$menuShortScreenMax: new-breakpoint(min-width $tablet-max max-height 800px);
