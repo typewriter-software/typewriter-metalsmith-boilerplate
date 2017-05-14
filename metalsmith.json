@@ -2,21 +2,23 @@
   "source": "./src/contents",
   "destination": "./build",
   "metadata": {
-    "title": "Concrete Metalsmith Boilerplate",
-    "description": "Metalsmith boilerplate for Concrete's Static Sites"
+    "title": "Typewriter Metalsmith Boilerplate",
+    "description": "Metalsmith boilerplate for Typewriter-based Static Sites"
   },
   "plugins": {
     "metalsmith-typewriter": {
       "username": "mcrider",
-      "project": "for-science"
+      "project": "for-science",
+      "templatesPath": "./src/templates",
+      "template": "jade"
     },
     "metalsmith-markdown": {},
-    "metalsmith-collections": {
-      "products": {}
-    },
     "metalsmith-jade": {},
     "metalsmith-permalinks": {
-      "pattern": ":title"
+      "pattern": ":collection/:slug"
+    },
+    "metalsmith-collections": {
+      "products": {}
     },
     "metalsmith-templates": {
       "engine": "jade",

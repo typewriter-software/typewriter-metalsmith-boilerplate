@@ -14,7 +14,8 @@
     "build": "DEBUG=metalsmith:* metalsmith"
   },
   "dependencies": {
-    "jquery": "^2.1.4"
+    "jquery": "^2.1.4",
+    "metalsmith-typewriter": "^0.1.0"
   },
   "devDependencies": {
     "browser-sync": "^2.4.0",
